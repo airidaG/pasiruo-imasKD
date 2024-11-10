@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --accent-color: #ff8b00;
+    --main-font: Roboto;
+    --text-color: #a9a9a9;
+}
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Default state (large screens) */ 
+.nav-bar {
+    display: block;
+
+}
+.burger-icon {
+    display: none;
+}
+/* gal veliau pataisyti? */
+@media (max-width: 768px) {
+    .nav-bar {
+        display: none; /* Hide the nav bar by default on small screens */
+        flex-direction: column;
+    }
+    .burger-icon {
+        display: block; /* Show the burger icon on small screens */
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .nav-bar.open {
+        display: flex; /* Display nav bar when open on small screens */
+    }
+}
+
+
+.logo{
+    color: var(--accent-color);
+    font-weight: 900;
+}
+
+.navigation{
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: -1vh;
+    background-color: whitesmoke;
+
+}
+
+.nav-list{
+    list-style-type: none;
+}
+
+.logo, .burger-icon{
+    align-self: center;
+    font-family: var(--main-font);
+    font-size: 1.3rem;
+
+}
+
+
+.nav-bar__button--link{
+    text-decoration: none;
+    color: black;
+    font-family: var(--main-font);
+    padding: 2.09vh 1.5vw;
+    font-size: 0.8rem;
+
+}
+
+
+.nav-bar__button--link:hover{
+    color: var(--accent-color);
+}
+
+
+.home{
+    height: 100vh;
+    width: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--main-font);
+    background: linear-gradient(to bottom, rgba(0, 130, 255, 0.9), rgba(0, 150, 255, 0.6)), 
+    url(img/background.png);
+}
+
+.home__heading{
+    color: white;
+    width: 40vw;
+    text-align: left;
+    /* position: absolute; */
+}
+
+.home__form--button{
+    background-color: var(--accent-color);
+    color: white;
+}
+
+.home__form--button:hover{
+    background-color: #a55b00;
+}
+
+.home__form--input, .home__form--button{
+    padding: 0.5rem;
+    border-radius: 2px;
+    border: none;
+}
+
+.services__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -2rem;
+
+}
+
+.services__box--img > img{
+    height: 30vh;
+    width: auto;
+}
+
+.services__box--text{
+    color: var(--text-color);
+    width: 30vw;
+    text-align: center;
+
+}
+    
+.services__box--header{
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-family: var(--main-font);
+}
+
+.services{
+    position: relative;
+}
+
+
+.offers{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f5f5;
+    padding-bottom: 2rem;
+}
+
+.offers__list{
+    display: grid;
+    grid-template-columns: minmax(16rem, 28rem);
+    grid-template-rows: repeat(6, 12rem);
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.offers__box{
+    box-shadow: var(--text-color) 1px 1px 1px 1px;
+    background-color: white;
+    font-family: var(--main-font);
+    padding: 20px;
+
+
+
+}
+
+.offers__box--img{
+    height: 5vh;
+}
+
+.bottom-bar{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #333333;
+    color: whitesmoke;
+    padding: 0.8rem;
+    font-family: var(--main-font);
+}
+
+.offers__box--heading, .offers__heading{
+    text-transform: uppercase;
+}
+
+.offers__text{
+    text-align: center;
+    width: 50vw;
+}
+
+.offers__box--text, .offers__text{
+    color: var(--text-color);
+    font-family: var(--main-font);
+
+}
+
+.offers__heading{
+    color: var(--accent-color);
+    font-family: var(--main-font);
+    font-size: 2rem;
+    margin-bottom: 0;
+
+}
+
+.benefits, .benefits__box{
+    display: flex;
+    flex-direction: column;
+
+ 
+}
+
+.benefits__box{
+    align-self: center;
+    padding: 4rem;
+    
+
+}
+
+.benefits__box--header-first, .benefits__box--header-second{
+    text-transform: uppercase;
+    font-family: var(--main-font);
+}
+
+.benefits__box--header-second{
+    color: var(--accent-color);
+}
+
+.benefits__box--text, .benefits__list{
+    color: var(--text-color);
+    font-family: var(--main-font);
+}
+
+.benefits__list{
+    list-style-type: none;
+    padding-left: 0;
+
+
+}
+
+.benefits__list--item::before {
+    content: '';
+    mask: url('img/checkmark-svgrepo-com.svg') center/contain no-repeat;
+    background-color: var(--accent-color);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    padding: 2px;
+}
+
+
+.benefits__box--img > img{
+    height: 70vh;
+    width: auto;
+}

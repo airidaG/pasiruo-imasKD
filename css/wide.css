@@ -1,0 +1,37 @@
+
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 2vh ;
+}
+
+
+.nav-list{
+
+    display: flex;
+}
+
+.nav-bar__button{
+    display: inline-block; 
+}
+
+.logo{
+    margin-left: 3rem;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.offers__list{
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(3, 12rem);
+}
+
+.benefits{
+    flex-direction: row;
+    
+}

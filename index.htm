@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrolinis</title>
+    <link rel="stylesheet" media="all" href="css/core.css">
+    <link rel="stylesheet" media="(min-width: 1201px)" href="css/large.css">
+</head>
+    <link rel="stylesheet" media="(min-width: 769px) and (max-width: 1200px)" href="css/wide.css">
+
+<body>
+    <header>
+        <div class="navigation">
+        <p class="logo">LOGO</p>
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li class="nav-bar__button"><a href="#home" class="nav-bar__button--link">Home</a></li>
+                <li class="nav-bar__button"><a href="#services" class="nav-bar__button--link">Services</a></li>
+                <li class="nav-bar__button"><a href="#why-us" class="nav-bar__button--link">Why Us</a></li>
+                <li class="nav-bar__button"><a href="#testimonials" class="nav-bar__button--link">Testimonials</a></li>
+                <li class="nav-bar__button"><a href="#blog" class="nav-bar__button--link">Blog</a></li>
+                <li class="nav-bar__button"><a href="#contact" class="nav-bar__button--link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="home" id="home">
+        <h1 class="home__heading">CHOOSE YOUR QUALITY DELIVERY OF YOUR CARGO</h1>
+        <form class="home__form">
+            <input class="home__form--input" type="text" placeholder="Enter your tracking number">
+            <input class="home__form--button" type="submit" value="Track Now">
+        </form>
+    </div> 
+    </header>
+    <main>
+        <div class="services" id="services">
+            <article class="services__box"> 
+                <picture class="services__box--img">
+                    <source media="(max-width: 768px)" srcset="images/cargo_air_small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/cargo_air_big.jpg">
+                    <img src="images/cargo_air_big.jpg" alt="cargo ship">
+                </picture>
+                <h3 class="services__box--header">Sea Freight</h3>
+                <p class="services__box--text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            </article>
+            <article class="services__box">
+                <picture class="services__box--img">
+                    <source media="(max-width: 768px)" srcset="images/cargo_sea_small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/cargo_sea_big.jpg">
+                    <img src="images/cargo_sea_big.jpg" alt="cargo plane">
+                </picture>
+                <h3 class="services__box--header">Air Freight</h3>
+                <p class="services__box--text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            </article>
+            <article class="services__box">
+                <picture class="services__box--img">
+                    <source media="(max-width: 768px)" srcset="images/cargo_delivery_small.jpg">
+                    <source media="(min-width: 769px)" srcset="images/cargo_delivery_big.jpg">
+                    <img src="images/cargo_delivery_big.jpg" alt="cargo delivery">
+                </picture>
+                <h3 class="services__box--header">Package Forwarding</h3>
+                <p class="services__box--text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            </article>
+        </div>
+        <section id="why-us" class="offers">
+            <h2 class="offers__heading">What We Offer </h2>
+            <p class="offers__text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="offers__list">
+            <article class="offers__box">
+                <img  class="offers__box--img" src="images/ship-sea-cruise-navigation-svgrepo-com.svg" alt="ship icon">
+                <h3 class="offers__box--heading">Sea Freight</h3>
+                <p class="offers__box--text"> A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </article>
+            <article class="offers__box">
+                <img class="offers__box--img" src="images/airplane-plane-svgrepo-com.svg" alt="airplane icon">
+                <h3 class="offers__box--heading"> Air Freight </h3>
+                <p class="offers__box--text">A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+            </article>
+            <article class="offers__box">
+                <img class="offers__box--img" src="images/package1-svgrepo-com (1).svg" alt="package trolley">
+                <h3 class="offers__box--heading">Package Forwarding</h3>
+                <p class="offers__box--text">A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+            </article>
+            <article class="offers__box">
+                <img class="offers__box--img" src="images/truck-speed-svgrepo-com.svg" alt="truck icon">
+                <h3 class="offers__box--heading">Trucking</h3>
+                <p class="offers__box--text"> A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </article>
+            <article class="offers__box">
+                <img class="offers__box--img" src="images/warehouse-svgrepo-com.svg" alt="warehouse icon">
+                <h3 class="offers__box--heading">Warehouse </h3>
+                <p class="offers__box--text">A small river named Duden flows by their place and supplies it with the necessary regelialia. </p>
+            </article>
+            <article class="offers__box">
+                <img class="offers__box--img" src="images/package-box-ui-4-svgrepo-com.svg" alt="package box icon">
+                <h3 class="offers__box--heading"> Delivery </h3>
+                <p class="offers__box--text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </article>
+        </div>
+        </section>
+        <article class="benefits">
+            <div class="benefits__box">
+            <h2 class="benefits__box--header-first">WHY US</h2>
+            <h3 class="benefits__box--header-second">We work quickly and efficiently! </h3>
+            <p class="benefits__box--text">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <ul class="benefits__list">
+                <li class="benefits__list--item">Cargo express</li>
+                <li class="benefits__list--item">Secure Services</li>
+                <li class="benefits__list--item">Secure Warehouseing</li>
+                <li class="benefits__list--item">Cost savings</li>
+                <li class="benefits__list--item">Proven by great companies</li>
+            </ul>
+        </div>
+        <div class="benefits__box">
+        <picture class="benefits__box--img">
+            <source media="(max-width: 768px)" srcset="images/person_1.jpg">
+            <source media="(min-width: 769px)" srcset="images/person_2.jpg">
+            <img src="images/person_1.jpg" alt="blured person">
+        </picture>
+    </div>
+        </article>
+    </main>
+    <footer id="contact" class="bottom-bar">
+        <p class="bottom-bar__text">© 2024 All Rights Reserved. Design by Airida Grasyte, TECHIN, 2024</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
